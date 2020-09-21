@@ -1,14 +1,14 @@
 {
-  "name": "bootstrap4-webpack-boilerplate",
+  "name": "s5000-main-page",
   "version": "1.1.0",
-  "description": "A simple boilerplate using Bootstrap 4, Webpack and Babel.",
+  "description": "Main page layout for DIG's 5000 series",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch",
     "images": "node ./bin/images.js"
   },
-  "author": "Dominik Hanke",
+  "author": "Daniel Mantovani",
   "license": "MIT",
   "repository": {
     "type": "git",
