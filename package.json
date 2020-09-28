@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --mode development --watch",
+    "dev": "webpack-dev-server --open",
     "images": "node ./bin/images.js"
   },
   "author": "Daniel Mantovani",
@@ -29,6 +29,7 @@
     "dotenv-webpack": "^2.0.0",
     "exports-loader": "^1.1.0",
     "fast-glob": "^3.2.4",
+    "html-webpack-plugin": "^4.5.0",
     "lodash": "^4.17.20",
     "mime-types": "^2.1.27",
     "mini-css-extract-plugin": "^0.10.0",
@@ -40,6 +41,7 @@
     "tar": "^6.0.5",
     "trash": "^6.1.1",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

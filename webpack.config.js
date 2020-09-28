@@ -2,6 +2,7 @@ const webpack = require("webpack");
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const Dotenv = require("dotenv-webpack");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env, argv) => {
   return {
@@ -80,7 +81,13 @@ module.exports = (env, argv) => {
       new webpack.ProvidePlugin({
         $: "jquery",
         jQuery: "jquery"
-      })
-    ]
+      }),
+      new HtmlWebpackPlugin({
+        template: 'src/index.html'
+      }),
+    ],
+    devServer: {
+      open: true
+    }
   };
 };
