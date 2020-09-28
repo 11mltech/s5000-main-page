@@ -12,53 +12,30 @@
 
 <body>
   <div class="container-fluid">
-    <img src="src/images/logo-tag.png" alt="" height="100px" style="padding: 20px;">
+    <img src="src/images/logo-tag-t.png" alt="" height="100px" style="padding: 20px;">
   </div>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-dark bg-custom-light"></nav>
-  <nav class="nav-main navbar navbar-expand-lg navbar-dark bg-custom-dark">
+  <nav class="bg-custom-dark"></nav>
+  <nav class="bg-custom-light">
     <div class="container">
-      <!-- <a class="navbar-brand" href="#">DIG</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span> </a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Portfolio
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#html-and-css">HTML &amp; CSS</a>
-              <a class="dropdown-item" href="#javascript">JavaScript</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#react">React</a>
-            </div>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div> -->
+      <div class="row">
+        <div class="col-xs-3 titlebar maintitle">
+          LEITLINK&trade;
+        </div>
+        <div class="col-xs-9 titlebar secondarytitle d-flex justify-content-center text-center">
+              Device View
+        </div>
+      </div>
     </div>
     <!-- /container -->
   </nav>
 
   <div class="container-fluid">
     <div class="row">
-      <div id="sidebar" class="col-xs-3 col-sm-2 col-md-1 col-lg-1 sidebar">
+      <div id="sidebar" class="col-xs-1 sidebar">
         <p> Este seria el sidebar</p>
       </div>
-      <div id="dashboard" class="col-xs-9 col-sm-10 col-md-11 col-lg-11">
+      <div id="dashboard" class="col-xs-11">
         <nav class="nav nav-tabs">
           <a class="nav-link active" href="#nav-general" data-toggle="tab" aria-controls="nav-general" aria-selected="true">General</a>
           <a class="nav-link" href="#nav-valves" data-toggle="tab" aria-controls="nav-valves" aria-selected="false">All valves</a>
@@ -68,11 +45,17 @@
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general">
-            <div class="col-xs-4 col-sm-5 col-md-5 col-lg-5">
-              <img src="images/cloud_storm_heavy_rain.png" style="background-color: transparent">
+            <div class="row">
+              <div class="col">
+                  <img src="src/images/cloud_storm_heavy_rain.png" height="200px" style="background-color: transparent">
+                </div>
+                <div class="col timeanddate">
+                  Thursday 9th <br>
+                  02:14pm <br>
+                  San Diego, CA
+                </div>
+              </div>
             </div>
-            Este es el panel general
-          </div>
           <div class="tab-pane fade" id="nav-valves" role="tabpanel" aria-labelledby="nav-valves">
             Este es el panel de válvulas
           </div>
