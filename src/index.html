@@ -15,13 +15,29 @@
   <!-- NAVBAR -->
   <nav class="bg-custom-dark"></nav>
   <nav class="bg-custom-light">
-    <div class="container">
+    <div class="container-flex">
       <div class="row">
-        <div class="col-xs-3 titlebar maintitle">
-          LEITLINK&trade;
+        <div class="col-3 titlebar maintitle d-flex justify-content-start">
+          <table class="titletable">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  LEITLINK&trade;
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="col-xs-9 titlebar secondarytitle d-flex justify-content-center text-center">
-              Device View
+        <div class="col-9 titlebar secondarytitle d-flex justify-content-center">
+          <table class="titletable">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  Device View
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -30,11 +46,11 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div id="sidebar" class="col-xs-1 sidebar">
-        <p> Este seria el sidebar</p>
+      <div id="sidebar" class="col-1 sidebar">
+        <p> Sidebar</p>
       </div>
-      <div id="dashboard" class="col-xs-11">
-        <nav class="nav nav-tabs">
+      <div id="dashboard" class="col-11">
+        <nav class="nav nav-tabs" role="tablist">
           <a class="nav-link active" href="#nav-general" data-toggle="tab" aria-controls="nav-general" aria-selected="true">General</a>
           <a class="nav-link" href="#nav-valves" data-toggle="tab" aria-controls="nav-valves" aria-selected="false">All valves</a>
           <a class="nav-link" href="#nav-sensors" data-toggle="tab" aria-controls="nav-sensors" aria-selected="false">Sensors</a>
@@ -44,18 +60,59 @@
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general">
             <div class="row">
-              <div class="col">
-                  <img src="src/images/cloud_storm_heavy_rain.png" height="200px" style="background-color: transparent">
-                </div>
-                <div class="col timeanddate">
-                  Thursday 9th <br>
-                  02:14pm <br>
-                  San Diego, CA
-                </div>
+              <div class="col-3">
+                <img src="src/images/cloud_storm_heavy_rain.png" class="weatherImage">
+              </div>
+              <div class="col-3">
+                <table class="weatherData">
+                  <tbody>
+                    <tr>
+                      <td>
+                        Temperature: 86ºF <br>
+                        Humidity: 95% <br>
+                        Rain: 11mm
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-5">
+                <table class="timeanddate">
+                  <tbody>
+                    <tr>
+                      <td>
+                        Thursday 9th <br>
+                        02:14pm <br>
+                        San Diego, CA
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
+            <div class="row">
+              <div class="col">
+                <img src="src/images/valv6.png" class="valveImage">
+              </div>
+              <div class="col">
+                <img src="src/images/valv7.png" class="valveImage">
+              </div>
+              <div class="col">
+                <img src="src/images/valv8.png" class="valveImage">
+              </div>
+            </div>
+            <div class="row">
+              Controller Status: <br>
+              Network: AT&T <br>
+              Signal: -67dB <br>
+              Alarms: NONE <br>
+              Battery: 56%
+            </div>
+          </div>
           <div class="tab-pane fade" id="nav-valves" role="tabpanel" aria-labelledby="nav-valves">
-            Este es el panel de válvulas
+            <div clas="row">
+              <img src="src/images/valveView.png" class="valveViewImage">
+            </div>
           </div>
           <div class="tab-pane fade" id="nav-sensors" role="tabpanel" aria-labelledby="nav-sensors">
             Este es el panel de sensores

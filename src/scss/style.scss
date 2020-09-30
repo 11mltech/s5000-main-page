@@ -4,6 +4,10 @@
 ----------------------------*/
 
 body {
+  --title-tab-height: 50px;
+  --weather-tab-height: 200px;
+  --valve-tab-height: 100px;
+  --valve-view-height: 500px;
   margin-bottom: 50px;
   background-color: #f3f4f6;
 }
@@ -26,7 +30,7 @@ body {
 
 .bg-custom-light {
   background-image: linear-gradient(15deg,#afcadb, #9cc8c9,#97aab8);
-  height: 50px;
+  height: var(--title-tab-height);
 }
 
 .bg-custom-dark {
@@ -34,10 +38,13 @@ body {
   height: 20px;
 }
 
-
 .titlebar {
   font-family: 'Roboto', sans-serif;
   color: white;
+}
+
+.titletable {
+  height: var(--title-tab-height);
 }
 
 .maintitle {
@@ -46,13 +53,70 @@ body {
 }
 
 .secondarytitle {
-  font-size: large;
+  font-size: x-large;
   font-style: bold;
   text-align: center;
   vertical-align: middle;
 }
 
+.weatherImage {
+  height: var(--weather-tab-height);
+  background-color: transparent;  
+}
+
+.weatherData {
+  text-align: center;
+  font-size: large;
+  vertical-align: middle;
+  height: var(--weather-tab-height);
+  margin: auto;
+  width: 80% !important;
+}
+
 .timeanddate {
   text-align: center;
   font-size: large;
+  vertical-align: middle;
+  height: var(--weather-tab-height);
+  margin: auto;
+  width: 80% !important;
+}
+
+.valveImage {
+  height: var(--valve-tab-height);
+  background-color: transparent;  
+}
+
+.valveViewImage {
+  height: var(--valve-view-height);
+  background-color: transparent;  
+}
+
+.nav-tabs {
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs .nav-link {
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  border: 2px solid #5f93b6;
+  background-color: #c1c1c1;
+  margin: 0 -2px 0 -2px;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 10px;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  background-color:#f3f4f6;
+  border: 2px solid #5f93b6;
+  border-bottom: transparent;
+}
+
+.nav-tabs, a {
+  color:  #5f93b6;
 }
