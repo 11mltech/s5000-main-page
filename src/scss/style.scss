@@ -6,8 +6,8 @@
 body {
   --title-tab-height: 50px;
   --weather-tab-height: 200px;
-  --valve-tab-height: 100px;
-  --valve-view-height: 500px;
+  --valve-tab-height: 150px;
+  --valve-view-height: 200px;
   margin-bottom: 50px;
   background-color: #f3f4f6;
 }
@@ -121,43 +121,15 @@ body {
   color:  #5f93b6;
 }
 
-@media (min-width: 768px) {
-
-  .carousel-inner .carousel-item-right.active,
-  .carousel-inner .carousel-item-next {
-      transform: translateX(50%);
-  }
-
-  .carousel-inner .carousel-item-left.active,
-  .carousel-inner .carousel-item-prev {
-      transform: translateX(-50%);
-  }
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(33%);
 }
 
-/* large - display 3 */
-@media (min-width: 992px) {
-
-  .carousel-inner .carousel-item-right.active,
-  .carousel-inner .carousel-item-next {
-      transform: translateX(33%);
-  }
-
-  .carousel-inner .carousel-item-left.active,
-  .carousel-inner .carousel-item-prev {
-      transform: translateX(-33%);
-  }
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-33%);
 }
-
-@media (max-width: 768px) {
-  .carousel-inner .carousel-item>div {
-      display: none;
-  }
-
-  .carousel-inner .carousel-item>div:first-child {
-      display: block;
-  }
-}
-
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -167,5 +139,5 @@ body {
 
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left {
-    transform: translateX(5);
+    transform: translateX(0);
 }

@@ -1,5 +1,5 @@
-$('#myCarousel').carousel({
-    interval: 1000
+$('#valveCarousel').carousel({
+    interval: 0
 })
 
 $('.carousel .carousel-item').each(function() {
