@@ -5,6 +5,7 @@ window.$ = $;
 import { gsap } from "gsap";
 window.gsap = gsap;
 require("bootstrap");
+require("./scss/style.scss");
 require("./carousel");
 
 // Remove this demo code, that's only here to show how the .env file works!

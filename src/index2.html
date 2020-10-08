@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Series 5000 main page layout</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <img src="src/images/logo-tag-t.png" alt="" height="100px" style="padding: 20px;">
+  </div>
+  <!-- NAVBAR -->
+  <nav class="bg-custom-dark"></nav>
+  <nav class="bg-custom-light">
+    <div class="container-flex">
+      <div class="row">
+        <div class="col-3 titlebar maintitle d-flex justify-content-start">
+          <table class="titletable">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  LEITLINK&trade;
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-9 titlebar secondarytitle d-flex justify-content-center">
+          <table class="titletable">
+            <tbody>
+              <tr>
+                <td class="align-middle">
+                  Device View
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div id="sidebar" class="col-1 sidebar">
+        <p> Sidebar</p>
+      </div>
+      <div id="dashboard" class="col-11">
+        <nav class="nav nav-tabs" role="tablist">
+          <a class="nav-link active" href="#nav-general" data-toggle="tab" aria-controls="nav-general"
+            aria-selected="true">General</a>
+          <a class="nav-link" href="#nav-valves" data-toggle="tab" aria-controls="nav-valves" aria-selected="false">All
+            valves</a>
+          <a class="nav-link" href="#nav-sensors" data-toggle="tab" aria-controls="nav-sensors"
+            aria-selected="false">Sensors</a>
+          <a class="nav-link" href="#nav-ET" data-toggle="tab" aria-controls="nav-ET" aria-selected="false">ET</a>
+          <a class="nav-link" href="#nav-history" data-toggle="tab" aria-controls="nav-history"
+            aria-selected="false">History</a>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <!--  -->
+          <div class="tab-pane fade show active" id="nav-general" role="tabpanel" aria-labelledby="nav-general">
+            <div class="row">
+              <div class="col-3">
+                <img src="src/images/cloud_storm_heavy_rain.png" class="weatherImage">
+              </div>
+              <div class="col-3">
+                <table class="weatherData">
+                  <tbody>
+                    <tr>
+                      <td>
+                        Temperature: 86ºF <br>
+                        Humidity: 95% <br>
+                        Rain: 11mm
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-5">
+                <table class="timeanddate">
+                  <tbody>
+                    <tr>
+                      <td>
+                        Thursday 9th <br>
+                        02:14pm <br>
+                        San Diego, CA
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="row mx-auto my-auto">
+              <div id="valveCarousel" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-80" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-4">
+                      <img src="src/images/valv1.png" class="valveImage img-fluid">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-4">
+                      <img src="src/images/valv2.png" class="valveImage img-fluid">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-4">
+                      <img src="src/images/valv3.png" class="valveImage img-fluid">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-4">
+                      <img src="src/images/valv4.png" class="valveImage img-fluid">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-4">
+                      <img src="src/images/valv5.png" class="valveImage img-fluid">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-4">
+                      <img src="src/images/valv6.png" class="valveImage img-fluid">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-4">
+                      <img src="src/images/valv7.png" class="valveImage img-fluid">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-4">
+                      <img src="src/images/valv8.png" class="valveImage img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev bg-dark w-auto" href="#valveCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next bg-dark w-auto" href="#valveCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              Controller Status: <br>
+              Network: AT&T <br>
+              Signal: -67dB <br>
+              Alarms: NONE <br>
+              Battery: 56%
+            </div>
+          </div>
+          <!--  -->
+          <div class="tab-pane fade" id="nav-valves" role="tabpanel" aria-labelledby="nav-valves">
+            <!-- <img src="src/images/valveView.png" style="height: 600; background: transparent"> -->
+            <div clas="row">
+              <div class="col-3">
+                <img src="src/images/valdet1.png" class="valveViewImage-">
+              </div>
+              <div class="col-3">
+                <img src="src/images/valdet2.png" class="valveViewImage-">
+              </div>
+              <div class="col-3">
+                <img src="src/images/valdet3.png" class="valveViewImage-">
+              </div>
+              <div class="col-3">
+                <img src="src/images/valdet4.png" class="valveViewImage-">
+              </div>
+            </div>
+            <div clas="row">
+              <div class="col">
+                <img src="src/images/valdet5.png" class="valveViewImage">
+              </div>
+              <div class="col">
+                <img src="src/images/valdet6.png" class="valveViewImage">
+              </div>
+              <div class="col">
+                <img src="src/images/valdet7.png" class="valveViewImage">
+              </div>
+              <div class="col">
+                <img src="src/images/valdet8.png" class="valveViewImage">
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="tab-pane fade" id="nav-sensors" role="tabpanel" aria-labelledby="nav-sensors">
+            <h1>This is the Sensors Panel</h1>
+          </div>
+          <!--  -->
+          <div class="tab-pane fade" id="nav-ET" role="tabpanel" aria-labelledby="nav-ET">
+            <h1>This is the ET Panel</h1>
+          </div>
+          <!--  -->
+          <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history">
+            <h1>This is the History Panel</h1>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /container -->
+</body>
+
+</html>

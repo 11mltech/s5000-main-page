@@ -9,10 +9,12 @@ body {
   --valve-tab-height: 150px;
   --valve-view-height: 200px;
   margin-bottom: 50px;
-  background-color: #f3f4f6;
+  background-image: url('src/images/DIG_LEITLINK_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
 }
-
-
+  
 /* Navigation
 ----------------------------*/
 
@@ -89,7 +91,7 @@ body {
 
 .valveViewImage {
   height: var(--valve-view-height);
-  background-color: transparent;  
+  background-color: transparent;
 }
 
 .nav-tabs {
